@@ -16,6 +16,8 @@ export function getAllPosts(){
         const fileContents = fs.readFileSync(fullFilePath, "utf-8");
         const {data:metadata, content} = matter(fileContents);
         
+        // console.log(slug, metadata, content. slug);
+        
         return {
             slug,
             metadata,
