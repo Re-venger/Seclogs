@@ -11,7 +11,15 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      hljs: {
+        theme: "github-dark",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-highlightjs")],
+  safelist: [
+    {
+      pattern: /hljs+/,
+    },
+  ],
 };
